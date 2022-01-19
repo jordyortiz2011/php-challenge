@@ -10,6 +10,7 @@ class Mobile
 {
 
 	protected $provider;
+
 	
 	function __construct(CarrierInterface $provider)
 	{
@@ -27,6 +28,20 @@ class Mobile
 
 		return $this->provider->makeCall();
 	}
+
+    public function sendSmsByNumber($number = '', $body = '')
+    {
+        if( empty($number) || empty($body)  ) return;
+
+        $validNumber = ContactService::validateNumber($number);
+
+        if( !$validNumber ) return;
+
+        $this->provider->createSms(new Contact('', $number), $body);
+        return $this->provider->sendSms();
+
+
+    }
 
 
 }
