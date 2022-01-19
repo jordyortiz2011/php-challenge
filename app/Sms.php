@@ -35,7 +35,7 @@ class Sms
         //code API
 
         $account_sid = 'AC8a4b0a81c6f610f949176be1adb8e5ec';
-        $auth_token = 'b57f3cbe54aaaba1a64ad6abcc50fd8e';
+        $auth_token = 'a7b9c67d04b70d7feb2efd766d4ec8c6';
         $twilio_number = "+16067140906";
 
         $twilio = new Client($account_sid, $auth_token);
