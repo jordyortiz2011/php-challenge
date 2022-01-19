@@ -7,7 +7,6 @@ define('DB_PASS', '');
 //define('DB_NAME', ''); //NOT NECESSARY, It'll be generate automatic to avoid import it from a file
 
 //FOR THE TEST, FILL THE ARRAY WITH THE NAMES AND NUMBER THAT YOU WISH FOR INSERT IN THE DATABASE
-//If you wish to send an SMS, enter a valid number, and put it in the file
 $contacts = array ();
 
 //CONTACT N°1
